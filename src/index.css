@@ -1,0 +1,74 @@
+:root {
+  --lightBlue: #41e1ba;
+  --tomato: #EF5D50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--lightBlue);
+  transition: background-color 300ms ease-in-out;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.working {
+  background: var(--tomato);
+}
+
+.hidden {
+  display: none;
+}
+
+.pomodoro {
+  background: #fff;
+  margin: 50px 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.pomodoro h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.pomodoro .timer {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.pomodoro .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pomodoro button {
+  background: var(--lightBlue);
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #000;
+  transition: background-color .3s ease-in-out;
+  margin: 20px auto;
+}
+
+.working .pomodoro button {
+  background: var(--tomato);
+  color: #fff;
+}
+
+.pomodoro .details {
+  margin: 20px 0;
+}
